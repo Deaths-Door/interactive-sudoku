@@ -11,7 +11,7 @@
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
                 /* To link .hpp files into this then add ${filename}.cpp instead of expected .hpp */
-                "sudoku.cpp"
+                "sudoku.cpp",
             ],
             "options": {
                 "cwd": "${fileDirname}"

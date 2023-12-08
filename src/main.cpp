@@ -1,21 +1,17 @@
-#include "./sudoku.hpp"
-#include "./utils.cpp"
-
+#include "./command.cpp"
 // TODO : Rename .exe to soduko.exe as final thing
 
 int main(int argc, char** argv){
-	std::cout << "HELLO\n" << SudokoGrid::random();
-
-	/*if (argc < 2) {
-		command::help();
+	if (argc < 2) {
+		help();
 		return 1;
 	};
 
 	char* command = argv[1];
-	
-	if (strings_equal(command,"play")) command::play(argc,argv);
-	else if (strings_equal(command,"solve")) command::solve(argc,argv);
-	else command::unknownCommand();*/
+
+	if (strings_equal(command,"play")) play(argc,argv);
+	else if (strings_equal(command,"solve")) solve(argc,argv);
+	else unknownCommand();
 
 	return 0;
 }
