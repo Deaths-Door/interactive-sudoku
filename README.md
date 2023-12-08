@@ -10,10 +10,11 @@
 ```
 
 2. Navigate to the project directory
-3. To build the executable run :
+3. To build the executable either install [this extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools), then click the run button on the `main.cpp` file and rename the `.exe` into `sudoko.exe` **OR** Run this script in the terminal
 ```
     g++ -g "${fileDirname}\\main.cpp" -o ${fileDirname}\\sudoko.exe sudoku.cpp
 ```
+
 
 ## Usage 
 
